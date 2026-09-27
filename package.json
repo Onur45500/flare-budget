@@ -1,0 +1,32 @@
+{
+  "name": "flare-budget",
+  "version": "0.1.0",
+  "description": "Offline GPT Image 2.5 cost estimator and legacy quality remapper",
+  "type": "module",
+  "bin": {
+    "flare-budget": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}
